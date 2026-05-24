@@ -1,0 +1,483 @@
+export const data = {
+  /** PART 1: Foundations of Workplace Gamification */
+  quiz1: [
+    {
+      question: `What is the core definition of Gamification in a corporate context?`,
+      options: [
+        `Allowing employees to play video games during lunch breaks to reduce stress`,
+        `The use of game-design elements in non-game contexts to drive specific behaviors`,
+        `A mandatory points-based system for punishing low-performance staff`,
+        `Converting all company communications into comic book formats`,
+      ],
+      answer: `The use of game-design elements in non-game contexts to drive specific behaviors`,
+      explanation: [
+        `This just leisure`,
+        `Gamification is a strategy to take the mechanics that make games engaging (feedback, progression, social proof) and apply them to work tasks like meter auditing or data entry.`,
+        `This is a traditional disciplinary system, not a game`,
+        `This is just a change in medium, not a change in motivational logic.`,
+      ],
+    },
+    {
+      question: `Which psychological concept explains why "leveling up" is more effective than an annual performance review?`,
+      options: [
+        `Retroactive Interference`,
+        `Delayed Gratification`,
+        `Instant Feedback Loops`,
+        `Cognitive Dissonance`,
+      ],
+      answer: `Instant Feedback Loops`,
+      explanation: [
+        `A relates to memory loss`,
+        `B is the opposite of what makes games work`,
+        `Games provide immediate feedback.  In a workplace, knowing your earned "50 XP" for a correct audit today is more motivating than waiting 12 months for a "Great job" in a meeting.`,
+        `D is the mental discomfort of holding two conflicting beliefs`,
+      ],
+    },
+    {
+      question: `"Intrinsic Motivation" is best described as:`,
+      options: [
+        `Doing a task because you are afraid of being fired`,
+        `Doing a task because you will get a cash bonus`,
+        `Doing a task because the activity itself is inherently rewarding or fulfilling`,
+        `Doing a task because a leaderboard says you are in last place`,
+      ],
+      answer: `Doing a task because the activity itself is inherently rewarding or fulfilling`,
+      explanation: [
+        `A is fear-based`,
+        `B is Extrinsic (external)`,
+        `This is the "Holy Grail" of management.  When a developer enjoys the "puzzle" of coding, they work better and longer without needing external pressure.`,
+        `D is Social Pressure (external)`,
+      ],
+    },
+    {
+      question: `What is the "PBL Trap" in gamification design?`,
+      options: [
+        `Using Points, Badges, and Leaderboards as the only features without deeper meaning`,
+        `Paying, Billing, and Leasing — the core of utility management`,
+        `Prohibiting Boredom and Laziness in the workplace`,
+        `Promoting Better Leadership through video game tournaments`,
+      ],
+      answer: `Using Points, Badges, and Leaderboards as the only features without deeper meaning`,
+      explanation: [
+        `Many companies fail because they just add a "badge" to boring task.  Without a sense of "Epic Meaning" or "Autonomy", PBLs become "chocolate-covered broccoli" — it still tastes like work.`,
+        `B is an industry acronym`,
+        `C is a fabricated concept`,
+        `D is a fabricated concept`,
+      ],
+    },
+    {
+      question: `In the "Octalysis Framework" of gamification, what does "Epic Meaning & Calling" represent?`,
+      options: [
+        `The desire to be the richest person in the office`,
+        `The belief that one is doing something for a purpose greater than themselves`,
+        `Getting a promotion to a C-suite position`,
+        `The fear of losing a job during a recession`,
+      ],
+      answer: `The belief that one is doing something for a purpose greater than themselves`,
+      explanation: [
+        `A is about personal status`,
+        `This is vital for Contour.  If a technician feels they are "Saving the South African Grid" rather than just "Checking Meters", their productivity increases.`,
+        `C is about personal status`,
+        `D is about "Loss Avoidance"`,
+      ],
+    },
+    {
+      question: `How does gamification help reduce "Technical Debt" in R&D?`,
+      options: [
+        `It automatically deletes old code`,
+        `It gamifies the documentation and refactoring process, making "boring" maintenance a rewarded quest`,
+        `It hires more junior developers to do the work`,
+        `It doesn’t; it actually increases debt by adding game code`,
+      ],
+      answer: `It gamifies the documentation and refactoring process, making "boring" maintenance a rewarded quest`,
+      explanation: [
+        `A is dangerous`,
+        `By rewarding developers for cleaning up old code or documenting APIs, you turn a chore into a "Cleanup Quest".`,
+        `C is a scaling strategy, not a motivational one`,
+        `D assumes the game layer is heavy, which it isn’t if designed correctly`,
+      ],
+    },
+    {
+      question: `Which neurochemical is most associated with the "Reward Circuit" in gamification?`,
+      options: [`Melatonin`, `Cortisol`, `Dopamine`, `Adrenaline`],
+      answer: `Dopamine`,
+      explanation: [
+        `A is for sleep`,
+        `B is for stress`,
+        `Dopamine is released during anticipation and achievement.  A well-designed gamified system creates "Dopamine loops" that keep employees engaged.`,
+        `D is for fight-or-flight`,
+      ],
+    },
+    {
+      question: `What is the primary benefit of a "Leaderboard" in a Services Department?`,
+      options: [
+        `To shame the bottom 10% of employees`,
+        `To provide social proof and healthy competition`,
+        `To determine who gets fired at the end of the month`,
+        `To show the customers who the best employee is`,
+      ],
+      answer: `To provide social proof and healthy competition`,
+      explanation: [
+        `A create a toxic environment`,
+        `It allows high-performers to be recognized by their peers,  which is often more valuable than a private "Well done" from a manager.`,
+        `C create a toxic environment`,
+        `D is a marketing tool, not an engagement one`,
+      ],
+    },
+    {
+      question: `What is "Flow State" (as defined by Mihaly Csikszentmihalyi)?`,
+      options: [
+        `The speed at which energy flows through an NRS 049 meter`,
+        `The mental state where a person is fully immersed in an activity, losing track of time`,
+        `The turnover rate of employees in a company`,
+        `The process of moving tokens from a server to a meter`,
+      ],
+      answer: `The mental state where a person is fully immersed in an activity, losing track of time`,
+      explanation: [
+        `A is a utility term`,
+        `Gamification aims to balance challenge and skill.  If a task is too hard, workers get anxious; too easy, they get bored.  Flow is the "Sweet Spot".`,
+        `C is an HR metric`,
+        `D are utility terms`,
+      ],
+    },
+    {
+      question: `Why is "Autonomy" a critical game mechanic for developers?`,
+      options: [
+        `Because developers want to work without any managers`,
+        `Because humans are more motivated when they have a choice in how they solve a problem`,
+        `Because it allows for automated code generation`,
+        `Because it reduces the need for office space`,
+      ],
+      answer: `Because humans are more motivated when they have a choice in how they solve a problem`,
+      explanation: [
+        `A is a misunderstanding of autonomy`,
+        `Giving a developer a "Menu of Quests" (tasks) to choose from, rather than a single assignment task, increases their ownership of the result.`,
+        `C is unrelated operational concept`,
+        `D is unrelated operational concept`,
+      ],
+    },
+    {
+      question: `What is the "Overjustification Effect"?`,
+      options: [
+        `When you provide too much documentation for a simple API`,
+        `When an external reward (like money) actually decreases a person’s intrinsic interest in a task`,
+        `When a meter counts more energy than is actually used`,
+        `When management justifies a downgrade in employee status`,
+      ],
+      answer: `When an external reward (like money) actually decreases a person’s intrinsic interest in a task`,
+      explanation: [
+        `A is over-documentation`,
+        `This is a warning for management.  If you pay someone to do something they already loved doing, they may stop doing it for "fun" and only do it for the money.`,
+        `C is a meter fault`,
+        `D is a management action`,
+      ],
+    },
+    {
+      question: `"Loss Avoidance" in gamification is used to:`,
+      options: [
+        `Prevent the company from losing money`,
+        `Motivate users by showing them what they might lose if they don’t act (e.g., losing a "Daily Streak")`,
+        `Insurance for hardware failures`,
+        `Hiding mistakes from the leadership`,
+      ],
+      answer: `Motivate users by showing them what they might lose if they don’t act (e.g., losing a "Daily Streak")`,
+      explanation: [
+        `A is a general business goal`,
+        `Humans are more motivated to avoid a loss than to achieve a gain.  "Don't lose your 5-day perfect audit streak!" is a powerful motivator.`,
+        `C is unrelated`,
+        `D is unrelated`,
+      ],
+    },
+    {
+      question: `How does gamification improve the "Onboarding" of new employees?`,
+      options: [
+        `It allows them to skip training and just play`,
+        `It turns the orientation into a "Guided Quest", unlocking information as they progress`,
+        `It gives them a free game console when they sign`,
+        `It makes the employment contract easier to read`,
+      ],
+      answer: `It turns the orientation into a "Guided Quest", unlocking information as they progress`,
+      explanation: [
+        `A is negligent`,
+        `Instead of a "Document Dump", new hires "level up" as they learn the company’s systems.`,
+        `C is a perk, not gamification`,
+        `D is just plain text improvement`,
+      ],
+    },
+    {
+      question: `Which of these is a "Con" of poorly implemented gamification?`,
+      options: [
+        `Employees work too fast and finish their tasks early`,
+        `"Gaming the system", where employees find ways to get points without doing real work`,
+        `Increased collaboration between departments`,
+        `Higher transparency in performance metrics`,
+      ],
+      answer: `"Gaming the system", where employees find ways to get points without doing real work`,
+      explanation: [
+        `A are "Pros", not "Cons"`,
+        `If you reward "Tickets Closed" but not "Quality", employees will close tickets without solving the problems just to get points.`,
+        `C are "Pros", not "Cons"`,
+        `D are "Pros, not "Cons""`,
+      ],
+    },
+    {
+      question: `Why is "Social Influence" important in a small R&D team (like Contour’s 5 dev’s)?`,
+      options: [
+        `So they can gossip more effectively`,
+        `To foster a culture of mentorship where senior devs are rewarded for helping juniors`,
+        `To allow management to see who is talking the most`,
+        `To replace the need for a Slack or Teams channel`,
+      ],
+      answer: `To foster a culture of mentorship where senior devs are rewarded for helping juniors`,
+      explanation: [
+        `A is negative/unproductive`,
+        `In a small team, "Peer-to-Peer" recognition (e.g., giving a colleague a “Code Wizard" badge) builds a stronger culture than top-down management.`,
+        `C are negative/unproductive`,
+        `D is a tool replacement`,
+      ],
+    },
+  ],
+  /** PART 2: Strategic & Actionable Gamification */
+  quiz2: [
+    {
+      question: `Which metric is the most important to track when launching a gamified system?`,
+      options: [
+        `The number of badges issued `,
+        `The "Delta" (change) in the core business KPI (e.g., Revenue Recovered)`,
+        `How many employees complained about the colors of the dashboard`,
+        `The amount of XP the CEO has `,
+      ],
+      answer: `The "Delta" (change) in the core business KPI (e.g., Revenue Recovered)`,
+      explanation: [
+        `A is a vanity metric`,
+        `Gamification is a means to an end.  If you have 1,000 badges but revenue hasn’t moved, the "game" has failed.`,
+        `C is UI feedback`,
+        `D is irrelevant.`,
+      ],
+    },
+    {
+      question: `What is "Scarcity" in game design?`,
+      options: [
+        `Not having enough developers to finish a project`,
+        `Making a reward available only for a limited time or to a limited number of people`,
+        `Having a low budget for the R&D department`,
+        `A shortage of smart meters in the warehouse`,
+      ],
+      answer: `Making a reward available only for a limited time or to a limited number of people`,
+      explanation: [
+        `A is a resource shortage, not a design mechanic`,
+        `It creates urgency.  "The first 3 technicians to finish their audits this week get the 'Early Bird' bonus.`,
+        `C is a resource shortage, not a design mechanic`,
+        `D are resource shortages, not design mechanics`,
+      ],
+    },
+    {
+      question: `How does gamification address "Employee Disengagement"?`,
+      options: [
+        `By making the work easier so they don’t have to think`,
+        `By providing a sense of progression and visible "small wins"`,
+        `By giving them more vacation time`,
+        `By increasing the frequency of management meetings`,
+      ],
+      answer: `By providing a sense of progression and visible "small wins"`,
+      explanation: [
+        `A leads to boredom`,
+        `Many workers disengage because they feel they are "treading water".  Games show them exactly how they are growing.`,
+        `C is a perk`,
+        `D usually increases disengagement`,
+      ],
+    },
+    {
+      question: `What is the "Sabbatical" mechanic in long-term gamification?`,
+      options: [
+        `Firing an employee for a month`,
+        `Allowing a "Reset" or break period so users don't suffer from "Point Fatigue"`,
+        `A mandatory religious holiday`,
+        `Moving a developer to the Services department for a year`,
+      ],
+      answer: `Allowing a "Reset" or break period so users don't suffer from "Point Fatigue"`,
+      explanation: [
+        `A is illegal/unproductive`,
+        `If a game never ends, people burn out.  "Seasons" allow everyone to start fresh and stay excited.`,
+        `C is unrelated`,
+        `D is a department transfer`,
+      ],
+    },
+    {
+      question: `Why should gamification be "Opt-in" where possible?`,
+      options: [
+        `Because some people hate having fun`,
+        `Because forced "fun" often feels like micromanagement`,
+        `Because it saves on server costs`,
+        `Because the law requires it`,
+      ],
+      answer: `Because forced "fun" often feels like micromanagement`,
+      explanation: [
+        `Gamification works best when it feels like a choice.  "Mandatory fun" is an oxymoron that breeds resentment`,
+        `A is a cynical view`,
+        `C are incorrect`,
+        `D are incorrect`,
+      ],
+    },
+    {
+      question: `What role does "Narrative" play in a utility management game?`,
+      options: [
+        `It tells the history of Eskom`,
+        `It provides a "Story" (e.g., "The Quest for the Perfect Grid")  that makes dry data meaningful`,
+        `It’s a list of all the company’s policies`,
+        `It’s the code comments in the C# backend`,
+      ],
+      answer: `It provides a "Story" (e.g., "The Quest for the Perfect Grid")  that makes dry data meaningful`,
+      explanation: [
+        `A is history`,
+        `Humans are storytelling animals.  Wrapping a target in a "Mission" makes people care more about the outcome.`,
+        `C is a manual`,
+        `D is technical documentation`,
+      ],
+    },
+    {
+      question: `How can gamification improve "Inter-departmental" collaboration (e.g., R&D and Services)?`,
+      options: [
+        `By making them play soccer against each other`,
+        `By creating "Co-op Missions" where a Dev and a Tech earn points for solving a bug together`,
+        `By merging the two departments into one`,
+        `By making them share the same desk`,
+      ],
+      answer: `By creating "Co-op Missions" where a Dev and a Tech earn points for solving a bug together`,
+      explanation: [
+        `A is a team-building event, not a workflow`,
+        `"Social Proximity" mechanics encourage people who usually don’t talk to work together toward a shared goal.`,
+        `C are structural changes`,
+        `D are structural changes`,
+      ],
+    },
+    {
+      question: `What is "White Hat" Gamification?`,
+      options: [
+        `Hacking the company’s servers for security testing`,
+        `Mechanics that make the user feel powerful, satisfied, and in control (e.g., Accomplishment)`,
+        `Wearing a physical white hat to the office`,
+        `Only using gamification for the C-suite`,
+      ],
+      answer: `Mechanics that make the user feel powerful, satisfied, and in control (e.g., Accomplishment)`,
+      explanation: [
+        `A is cybersecurity`,
+        `It focuses on positive emotions.`,
+        `C is fashion`,
+        `D is exclusionary.`,
+      ],
+    },
+    {
+      question: `What is "Black Hat" Gamification?`,
+      options: [
+        `Using gamification to trick employees into working for free`,
+        `Mechanics that drive behavior through urgency, fear orf loss, or mystery`,
+        `Gamification used by hackers to steal tokens`,
+        `A game about the coal industry`,
+      ],
+      answer: `Mechanics that drive behavior through urgency, fear orf loss, or mystery`,
+      explanation: [
+        `A is unethical`,
+        `It isn’t necessarily "evil", but it uses "Negative" motivators (like a countdown timer) to drive action.  It’s effective but can cause stress if overused.`,
+        `C are unrelated`,
+        `D are unrelated`,
+      ],
+    },
+    {
+      question: `How can "Virtual Wheeling" be gamified for a client?`,
+      options: [
+        `By making the billing statement look like a Monopoly board`,
+        `By showing a live "Energy Trading" dashboard where they can see "Profit" in real-time`,
+        `By giving them a free t-shirt for using the service`,
+        `By charging them more if they don’t use it `,
+      ],
+      answer: `By showing a live "Energy Trading" dashboard where they can see "Profit" in real-time`,
+      explanation: [
+        `It's unprofessional`,
+        `It turns a complex financial transaction into a visual "win" for the client.`,
+        `It's a gift`,
+        `It's a penalty`,
+      ],
+    },
+    {
+      question: `Which is a better reward for a "Senior Developer": A Badge or "Autonomy Time"?`,
+      options: [
+        `A Badge, because it looks good on LinkedIn`,
+        `"Autonomy Time" (e.g., 4 hours a week to work on any project they want)`,
+        `Neither; they just want more money`,
+        `A "Developer of the Year" trophy`,
+      ],
+      answer: `"Autonomy Time" (e.g., 4 hours a week to work on any project they want)`,
+      explanation: [
+        `Considered a "Low-level" reward`,
+        `High-level talent values time and trust over digital stickers.  This is "Human-Focused" reward design.`,
+        `Considered a "Low-level" reward`,
+        `An assumption that ignores intrinsic motivation`,
+      ],
+    },
+    {
+      question: `What is "Easter Egg" design in a workplace system?`,
+      options: [
+        `Hiding literal chocolate eggs in the office`,
+        `Small, hidden rewards or "surprises" for discovering a more efficient way to do a task`,
+        `A bug in the software that wasn’t caught during testing`,
+        `A specific type of meter encryption`,
+      ],
+      answer: `Small, hidden rewards or "surprises" for discovering a more efficient way to do a task`,
+      explanation: [
+        `It's an event`,
+        `It encourages exploration and "Spectacularizing" the mundane.  "Oh, you found the shortcut key for that audit? Here’s a 'Speed Demon' pop-up!"`,
+        `It's a failure`,
+        `It's technical`,
+      ],
+    },
+    {
+      question: `How does "Social Gifting" work in a gamified office?`,
+      options: [
+        `Giving your salary to a coworker`,
+        `Allowing employees to "Send" their earned points or badges to a colleague as a thank-you`,
+        `A secret Santa event`,
+        `Mandatory charity donations from your paycheck`,
+      ],
+      answer: `Allowing employees to "Send" their earned points or badges to a colleague as a thank-you`,
+      explanation: [
+        `Financial or social event, not mechanic`,
+        `This builds a "Gratitude Economy".  It feels better to receive a "Helpful" badge from a peer than from a boss.`,
+        `Financial or social event, not mechanic`,
+        `Financial or social events, not mechanic`,
+      ],
+    },
+    {
+      question: `What is the risk of "Leaderboard Blindness"?`,
+      options: [
+        `When the leaderboard is so bright it hurts your eyes `,
+        `When the top person is so far ahead that everyone else gives up`,
+        `When management forgets to look at the leaderboard`,
+        `When the leaderboard is deleted by accident`,
+      ],
+      answer: `When the top person is so far ahead that everyone else gives up`,
+      explanation: [
+        `Not psychological concept`,
+        `If the #1 person has 10,000 points and #2 has 100, #2 will stop trying.  Good design uses "Relative Leaderboards" (showing people just above and below you).`,
+        `Not psychological concept`,
+        `Not psychological concept`,
+      ],
+    },
+    {
+      question: `What is the "Endowed Progress Effect"?`,
+      options: [
+        `Giving an employee a promotion they didn’t earn`,
+        `If people feel they have already made progress toward a goal, they are more likely to complete it`,
+        `The tendency for energy prices to always go up`,
+        `Having a lot of money in the bank`,
+      ],
+      answer: `If people feel they have already made progress toward a goal, they are more likely to complete it`,
+      explanation: [
+        `It's bad management`,
+        `This is why "Loyalty Cards" often come with 2 stamps already filled in.  In work, starting a new project with "10% Complete" (due to pre-work) makes people finish it faster.`,
+        `It's an economic fact`,
+        `It's wealth.`,
+      ],
+    },
+  ],
+};
