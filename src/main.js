@@ -2,6 +2,7 @@ import './style.css';
 import { data } from './gamidata.js';
 
 let dataq = data['quiz1'];
+let currentQuestion = 0;
 
 const appDiv = document.getElementById('app');
 // console.log(dataq.length);
@@ -14,6 +15,10 @@ for (let q = 0; q < dataq.length; q++) {
   let divparent = document.createElement('div');
   divparent.className = 'question';
   divcontainer.appendChild(divparent);
+
+  if (q === 0) {
+    divparent.classList.add('active');
+  }
 
   let divheader = document.createElement('h4');
   divheader.innerHTML = `Question ${q + 1}`;
@@ -51,6 +56,13 @@ for (let q = 0; q < dataq.length; q++) {
 
   divparent.appendChild(divexplanation);
 
+  let nextButton = document.createElement('button');
+  nextButton.className = 'next-btn';
+  nextButton.innerHTML = 'Next &raquo;';
+  nextButton.style.display = 'none';
+
+  divparent.appendChild(nextButton);
+
   // Store correct index on question container
   divparent.dataset.correct = correctIndex;
 
@@ -85,6 +97,24 @@ for (let q = 0; q < dataq.length; q++) {
 
       divexplanation.classList.add('show');
       divexplanation.style.display = 'block';
+
+      nextButton.style.display = 'block';
     });
+  });
+
+  nextButton.addEventListener('click', () => {
+    let questions = document.querySelectorAll('.question');
+    questions[currentQuestion].classList.remove('active');
+
+    currentQuestion++;
+
+    if (currentQuestion < questions.length) {
+      questions[currentQuestion].classList.add('active');
+    } else {
+      divcontainer.innerHTML = `
+        <h2>🎉 Quiz Complete</h2>
+        <p>Thank you for participating.</p>
+      `;
+    }
   });
 }
