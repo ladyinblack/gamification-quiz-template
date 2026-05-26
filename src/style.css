@@ -10,11 +10,32 @@ body {
 }
 
 .question {
+  display: none;
   background: white;
   padding: 25px;
   border-radius: 8px;
   margin-bottom: 30px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question.active {
+  display: block;
+}
+
+.next-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 22px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.next-btn:hover {
+  background: #2563eb;
 }
 
 .option {
