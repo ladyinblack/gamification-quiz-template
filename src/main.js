@@ -11,6 +11,34 @@ let divcontainer = document.createElement('div');
 divcontainer.className = 'quiz-container';
 appDiv.appendChild(divcontainer);
 
+const progressWrapper = document.createElement('div');
+progressWrapper.className = 'progress-wrapper';
+
+const progressText = document.createElement('div');
+progressText.className = 'progress-text';
+
+const progressTrack = document.createElement('div');
+progressTrack.className = 'progress-track';
+
+const progressBar = document.createElement('div');
+progressBar.className = 'progress-bar';
+
+progressTrack.appendChild(progressBar);
+progressWrapper.appendChild(progressText);
+progressWrapper.appendChild(progressTrack);
+
+appDiv.insertBefore(progressWrapper, divcontainer);
+
+function updateProgress() {
+  const percentage = ((currentQuestion + 1) / dataq.length) * 100;
+
+  progressBar.style.width = `${percentage}%`;
+
+  progressText.textContent = `Question ${currentQuestion + 1} of ${
+    dataq.length
+  }`;
+}
+
 for (let q = 0; q < dataq.length; q++) {
   let divparent = document.createElement('div');
   divparent.className = 'question';
@@ -108,9 +136,13 @@ for (let q = 0; q < dataq.length; q++) {
 
     currentQuestion++;
 
+    updateProgress();
+
     if (currentQuestion < questions.length) {
       questions[currentQuestion].classList.add('active');
     } else {
+      progressWrapper.style.display = 'none';
+
       divcontainer.innerHTML = `
         <h2>🎉 Quiz Complete</h2>
         <p>Thank you for participating.</p>
